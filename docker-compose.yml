@@ -1,0 +1,12 @@
+version: "3"
+services:
+  te-front:
+    build:
+      context: ./te-front
+    ports:
+      - "5173:5173"
+  back-te:
+    build:
+      context: ./back-te
+    ports:
+      - "3000:3000"
